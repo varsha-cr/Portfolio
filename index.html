@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <a href="#Home"><div class="logo">Varsha</div></a>
+            
+            <!-- Wrapper for list and button -->
+            <div class="nav-menu">
+                <ul class="list-items">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><button class="download-cv" onclick="window.open('C R Varsha_ENG21CS0089.pdf')">Download CV <i class="uil uil-file-download"></i></button></li>
+                </ul>
+        
+                <!-- Hamburger Menu -->
+                <div class="hamburger">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </div>
+        </nav>
+        
+        <hr>
+        <main id="Home" class="wrapper">
+          <section class="featured-box" id="home">
+            <div class="featured-text">
+                <div class="featured-text-card">
+                    <span>Hi, I'm C R Varsha</span>
+                </div>
+                <div class="featured-name">
+                    <p>I'm an aspiring <br> <span id="changing-text"></span><span class="cursor">|</span></p>
+
+                </div>
+                <div class="social-icons">
+                    <a href="">
+                        <button class="icon"><i class="uil uil-instagram"></i></button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/crvarsha" target="_blank" >
+                        <button class="icon"><i class="uil uil-linkedin"></i></button>
+                    </a>
+                    <a href="https://github.com/varsha-cr" target="_blank">
+                        <button class="icon"><i class="uil uil-github-alt"></i></button>
+                    </a>
+                </div>
+                
+            </div>
+          </section>
+        </main>
+    
+    <section id="about">
+        <div class="container">
+            <p class="heading">About me</p>
+            <div class="about-me-box">
+                    I'm a 4th year computer science and engineering student.
+                    I'm a <span class="passion">Full-Stack and Data Science enthusiast</span> passionate about building scalable applications and intelligent AI solutions.
+                    I have experience in MERN stack, SQL, AI, NLP, deep learning and IOT with projects in healthcare, automation, and web development. I love solving complex problems and developing impactful solutions.
+                
+            </div>
+            <button class="download-cv about-btn" onclick="window.open('C R Varsha_ENG21CS0089.pdf')">Grab my resume!</button>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <p class="heading">Skills</p>
+            <div class="skills">
+                <div class="skill-item">
+                    <p >Programming Languages</p>
+                    <ul class="skill-list">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <p>Web Technologies</p>
+                    <ul class="skill-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <p>Databases</p>
+                    <ul class="skill-list">
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+    <section id="projects">
+         <div class="heading">Projects</div>
+    </section>
+    <section id="achievements">
+          <div class="heading">Certificates and Achievements</div>
+    </section>
+
+    </div>
+    <!-- Typing animation-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- scroll animation-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+* {
+box-sizing: border-box;
+margin: 0;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@300;400;500;600&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background: #68338cc4;
+    border-radius: 30px;
+    height: 50px; /* Reduce thumb size */
+    min-height: 30px; /* Set a minimum height */
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #68338c;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Pushes logo left, menu right */
+    align-items: center;
+    background: black;
+    height: 60px;
+    padding: 0 50px; /* Add padding for spacing */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 30px;
+}
+nav>a{
+  text-decoration: none;
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Menu Wrapper */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation List */
+.list-items {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Navbar Links */
+.list-items a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.list-items a.active{
+  color: #8f58b4;
+}
+.list-items a:hover{
+  color: #8f58b4;
+}
+
+
+/* Download CV Button */
+.download-cv {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: black;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+    margin-left: 5px;
+}
+
+.download-cv:hover {
+    background: linear-gradient(to right, rgba(104, 51, 140, 0.4), rgba(104, 51, 140, 1));
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.wrapper {
+    padding-inline:10vw ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+  }
+  
+  .featured-box {
+    width: 70%;
+    max-width: 600px;
+    border: 2px solid #68338c;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(104, 51, 140, 0.4);
+    border-radius: 5px;
+    height: fit-content;
+  }
+  .featured-name{
+    font-size: 20px;
+  }
+  .featured-text-card{
+    font-size: 60px;
+  }
+  .social-icons{
+    margin: 20px auto;
+  }
+  #changing-text{
+    color: #68338c;
+    font-weight: bold;
+  }
+  .icon {
+    background: black; /* Example button background */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .icon i {
+    color: white;  /* Ensures the icon is white */
+    font-size: 35px; /* Adjust the size if needed */
+  }
+  .cursor {
+    animation: blink 0.7s infinite;
+  }
+  .social-icons a{
+      text-decoration: none;
+  }
+  section{
+    padding-inline:10vw ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+  }
+  .container{
+    padding: 10px;
+    width:100% ;
+    max-width: 1000px ;
+    text-align: center;
+  }
+  .heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color: #68338c;
+    text-shadow: 1px 1px rgba(104, 51, 140, 0.4);
+    margin-bottom: 40px;
+  }
+  .passion{
+    color: #936bae;
+    font-weight: 300;
+  }
+  .about-me-box{
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+  }
+  .about-btn{
+    align-items: center;
+    margin-top: 30px;
+    background: linear-gradient(to left, rgba(104, 51, 140, 0.4), rgba(104, 51, 140, 1));
+
+  }
+/* Center the skill items container */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 20px; /* Add space between skill items */
+  text-align: center; /* Ensure text inside is also centered */
+}
+
+/* Individual skill item box */
+.skill-item {
+  border: 1px solid #68338c;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px 60px;
+  text-align: center; /* Center text inside the box */
+  width: 100% ;
+  max-width: 1200px;
+}
+
+/* Style for the skill category heading */
+.skill-item p {
+  color: #8f58b4;
+  text-shadow: 1px 1px rgba(104, 51, 140, 0.4);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Ensure the list is centered */
+.skill-item ul {
+  padding: 0;
+  text-align: center; /* Center text inside */
+}
+
+/* Remove default list styles */
+.skill-item li {
+  list-style: none;
+  padding: 2px 0;
+}
+
+
+  /* -------------keyframe and media------------------------*/
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+
+ 
+/* Menu Slide Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Responsive Navbar */
+@media only screen and (max-width: 768px) {
+    .list-items {
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        background: rgba(129, 99, 149, 0.7); /* Default dark background */
+        border-radius: 0px 0px 8px 8px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    /* Show menu when active */
+    .list-items.active {
+        display: flex;
+        opacity:1;
+        transform: translateY(0);
+    }
+
+    /* Menu items */
+    .list-items li {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /* Show hamburger icon in mobile */
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        margin-right: 30px;
+        position: relative;
+        z-index: 1100;
+    }
+
+}
+
